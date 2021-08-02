@@ -1,13 +1,51 @@
+@font-face {
+    font-family: Main;
+    src: url(./assets/IBM_Plex_Serif/IBMPlexSerif-Thin.ttf);
+}
+
+:root {
+    --c-primary: #61dafb;
+    --c-secondary: #282c34;
+    --c-text: white;
+}
+
 body {
     margin: 0;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+
+    font-family: "Main";
+    /* font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+    sans-serif; */
+
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+
+    background-color: var(--c-secondary);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: var(--c-text);
+}
+
+#root {
+    width: 100%;
+    min-height: 100vh;
 }
 
 code {
     font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+a {
+    color: var(--c-primary);
+}
+
+.float-right {
+    margin-left: auto;
+}
+
+@import '../node_modules/bootstrap-icons/font/bootstrap-icons.css';

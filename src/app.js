@@ -1,22 +1,41 @@
-import logo from './logo.svg';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import './app.css';
-import useCounter from './components/counter';
-import Home from './pages/home/home.view';
+import Header from './components/header/header';
+import Footer from './components/footer/footer';
+import Home from './pages/home/home';
+import Projects from './pages/projects/projects';
+import Friends from './components/friends/friends';
+import useToggle from './modules/toggle';
 
 function App() {
-    const {increment, counterVal} = useCounter();
+    const routes = <Switch>
+        <Route exact path="/">
+            <Home />
+        </Route>
+        <Route path="/projects">
+            <Projects />
+        </Route>
+    </Switch>;
+
+    const {isOn: showFriends, toggle} = useToggle(true);
 
     return (
-        <div className="App">
-            <header className="App-header">
-                <img src={logo} className="App-logo" alt="logo" />
+        <Router>
+            <div className="app">
+                <Header showAside={showFriends} onToggleAside={toggle} />
 
-                <button onClick={increment}>Increment</button>
-                {counterVal}
+                <main>
+                    <section>
+                        {routes}
+                    </section>
+                    <aside className={showFriends ? "show" : "hide"}>
+                        <Friends />
+                    </aside>
+                </main>
 
-                <Home />
-            </header>
-        </div>
+                <Footer />
+            </div>
+        </Router>
     );
 }
 
