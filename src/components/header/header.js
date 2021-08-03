@@ -1,22 +1,20 @@
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import './header.css';
-import logo from '../../logo.svg';
+import logo from '../../assets/logo/Logo-Text-Light.svg';
 
 function Header(props) {
     return (
         <header>
             <div className="brand">
                 <img id="test" src={logo} className="logo" alt="logo" />
-
-                <div>Eggsecuter</div>
             </div>
 
             <div className="nav">
                 <div className="nav-link">
-                    <Link to="/">Home</Link>
+                    <NavLink exact="true" activeClassName="active" to="/">Home</NavLink>
                 </div>
                 <div className="nav-link">
-                    <Link to="/projects">Projects</Link>
+                    <NavLink activeClassName="active" to="/projects">Projects</NavLink>
                 </div>
                 <div className="nav-link float-right">
                     <button onClick={props.onToggleAside}>

@@ -7,13 +7,13 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="200mm"
+   width="680mm"
    height="200mm"
-   viewBox="0 0 200 200"
+   viewBox="0 0 680 200"
    version="1.1"
    id="svg8"
    inkscape:version="1.0.2-2 (e86c870879, 2021-01-15)"
-   sodipodi:docname="Logo.svg">
+   sodipodi:docname="Logo-Text-Dark.svg">
   <defs
      id="defs2" />
   <sodipodi:namedview
@@ -23,9 +23,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.7"
-     inkscape:cx="331.73902"
-     inkscape:cy="569.48917"
+     inkscape:zoom="0.41175781"
+     inkscape:cx="1483.1884"
+     inkscape:cy="242.92144"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      inkscape:document-rotation="0"
@@ -84,5 +84,16 @@
         </g>
       </g>
     </g>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:condensed;font-size:105.833px;line-height:1.25;font-family:Arial;-inkscape-font-specification:'Arial, Condensed';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:3;stroke-miterlimit:4;stroke-dasharray:none"
+       x="193.12706"
+       y="135.75742"
+       id="text840"><tspan
+         sodipodi:role="line"
+         id="tspan838"
+         x="193.12706"
+         y="135.75742"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:condensed;font-size:105.833px;font-family:Arial;-inkscape-font-specification:'Arial, Condensed';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:3;stroke-miterlimit:4;stroke-dasharray:none">Eggsecuter</tspan></text>
   </g>
 </svg>

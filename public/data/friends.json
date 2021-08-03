@@ -1,0 +1,46 @@
+[
+    {
+        "name": "Jacek Lajdecki",
+        "github": {
+            "title": "jackra1n",
+            "url": "https://github.com/jackra1n"
+        },
+        "website": {
+            "title": "Jacks site",
+            "url": "https://jackra1n.com/"
+        }
+    },
+    {
+        "name": "Yael Fassbind",
+        "github": {
+            "title": "ariael21",
+            "url": "https://github.com/ariael21"
+        },
+        "website": {
+            "title": "",
+            "url": ""
+        }
+    },
+    {
+        "name": "Silvan Eugster",
+        "github": {
+            "title": "ausPrinzxp",
+            "url": "https://github.com/ausPrinzxp"
+        },
+        "website": {
+            "title": "",
+            "url": ""
+        }
+    },
+    {
+        "name": "Tim Scheiber",
+        "github": {
+            "title": "hoiton",
+            "url": "https://github.com/hoiton"
+        },
+        "website": {
+            "title": "",
+            "url": ""
+        }
+    }
+]

@@ -14,11 +14,12 @@ main {
 
 main > section {
     flex: 1;
-    margin: 0 20%;
+    margin: 30px 20%;
 }
 
 main > aside {
     overflow-x: hidden;
+    background: var(--c-secondary);
 }
 
 main > aside.hide {
@@ -29,6 +30,10 @@ main > aside.hide {
 
 main > aside.show {
     padding: 5px 25px;
-    width: 200px;
+    width: 300px;
     transition: .5s;
+}
+
+main > aside * {
+    white-space: nowrap;
 }

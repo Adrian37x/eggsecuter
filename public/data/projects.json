@@ -1,0 +1,39 @@
+[
+    {
+        "name": "Garrio",
+        "description": "Chat app with much more features than you've ever seen. Try it out!",
+        "version": "0.0.0",
+        "domain": "",
+        "git": "",
+        "tags": [
+            "external",
+            "team"
+        ],
+        "logs": [
+            {
+                "date": "20.02.2021",
+                "title": "Initialized project",
+                "description": "Tim, Ivo and Adrian are part of the Garrio-Dev team..."
+            }
+        ]
+    },
+    {
+        "name": "EZ-Drums",
+        "description": "Chat app with much more features than you've ever seen. Try it out!",
+        "version": "1.0.0",
+        "domain": "ez-drums.eggsecuter.com",
+        "git": "https://github.com/Adrian37x/ez-drums",
+        "tags": [
+            "internal",
+            "team",
+            "school"
+        ],
+        "logs": [
+            {
+                "date": "29.07.2021",
+                "title": "Deployed existing School Projects",
+                "description": "This application has been developed for a school module. There are no further improvements or features planned."
+            }
+        ]
+    }
+]
