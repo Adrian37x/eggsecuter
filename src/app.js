@@ -17,7 +17,7 @@ function App() {
         </Route>
     </Switch>;
 
-    const {isOn: showFriends, toggle} = useToggle(true);
+    const {isOn: showFriends, toggle} = useToggle(window.innerWidth < 1400 ? false : true);
 
     return (
         <Router>

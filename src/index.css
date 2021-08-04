@@ -3,6 +3,16 @@
     src: url(./assets/IBM_Plex_Serif/IBMPlexSerif-Thin.ttf);
 }
 
+@font-face {
+    font-family: MainBold;
+    src: url(./assets/IBM_Plex_Serif/IBMPlexSerif-SemiBold.ttf);
+}
+
+@font-face {
+    font-family: MainItalic;
+    src: url(./assets/IBM_Plex_Serif/IBMPlexSerif-Italic.ttf);
+}
+
 :root {
     --c-primary: #ff7f2a;
     --c-primary-light: #ff9752;
@@ -45,6 +55,9 @@ code {
 h1 {
     font-size: 2.5rem!important;
     color: var(--c-primary-light);
+    border-bottom: 1px solid var(--c-primary);
+    margin-bottom: 20px;
+    padding-bottom: 10px;
 }
 
 h2 {
@@ -62,15 +75,71 @@ h4 {
 }
 
 p {
-    font-size: 1rem!important;
+    font-size: 1.3rem!important;
 }
 
 a {
     color: var(--c-primary);
 }
 
+.btn a {
+    text-decoration: none;
+}
+
 .float-right {
     margin-left: auto;
+}
+
+button, .btn {
+    display: inline-block;
+    outline: none;
+    border: 1px solid var(--c-primary);
+    color: var(--c-primary);
+    background: none;
+    border-radius: 3px;
+    padding: 5px 20px;
+    cursor: pointer;
+    user-select: none;
+    font-family: Main;
+    font-size: 1rem;
+}
+
+table {
+    width: 100%;
+    overflow: auto;
+    margin: 20px 0;
+    border-spacing: 0;
+}
+
+thead {
+    background: var(--c-secondary-dark);
+    font-family: "MainBold";
+}
+
+th, td {
+    border-top: 1px solid var(--c-text);
+    border-left: 1px solid var(--c-text);
+    padding: 8px;
+    word-break: break-all;
+    min-width: 80px;
+}
+
+th:last-child, td:last-child {
+    border-right: 1px solid var(--c-text);
+}
+
+tr:last-child td {
+    border-bottom: 1px solid var(--c-text);
+}
+
+.badge {
+    display: inline;
+    word-break: keep-all;
+    text-align: center;
+    padding: 3px 8px;
+    margin: 2px 5px;
+    background: var(--c-primary-light);
+    border-radius: 5px;
 }
 
 @import '../node_modules/bootstrap-icons/font/bootstrap-icons.css';

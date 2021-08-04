@@ -1,4 +1,6 @@
+import { Link } from 'react-router-dom';
 import useToggle from '../../modules/toggle';
+import Projects from '../projects/projects';
 
 function Home() {
     const {isOn: isCollapsed, toggle} = useToggle(true);
@@ -19,6 +21,12 @@ function Home() {
             <button onClick={toggle}>
                 {isCollapsed ? "Read more" : "Read less"}
             </button>
+
+            <Projects limit={3} />
+
+            <div className="btn">
+                <Link to="/projects">See all</Link>
+            </div>
         </>
     );
 }

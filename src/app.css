@@ -14,7 +14,8 @@ main {
 
 main > section {
     flex: 1;
-    margin: 30px 20%;
+    margin: 30px 5%;
+    overflow: auto;
 }
 
 main > aside {
@@ -36,4 +37,29 @@ main > aside.show {
 
 main > aside * {
     white-space: nowrap;
+}
+
+@media only screen and (max-width: 1439px) {
+    main {
+        position: relative;
+    }
+
+    main > aside {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    main > section {
+        margin: 30px 10%;
+    }
+}
+
+@media only screen and (min-width: 1400px) {
+    main > section {
+        margin: 30px 15%;
+    }
 }
