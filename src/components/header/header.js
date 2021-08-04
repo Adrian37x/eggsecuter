@@ -1,17 +1,19 @@
 import { NavLink } from 'react-router-dom';
 import './header.css';
-import logo from '../../assets/logo/Logo-Text-Light.svg';
+import brandLogo from '../../assets/logo/Logo.svg';
+import brandText from '../../assets/logo/Text-Light.svg';
 
 function Header(props) {
     return (
         <header>
             <div className="brand">
-                <img id="test" src={logo} className="logo" alt="logo" />
+                <img src={brandLogo} className="brand-logo" alt="brand-logo" />
+                <img src={brandText} className="brand-text" alt="brand-text" />
             </div>
 
             <div className="nav">
                 <div className="nav-link">
-                    <NavLink exact="true" activeClassName="active" to="/">Home</NavLink>
+                    <NavLink exact={true} activeClassName="active" to="/">Home</NavLink>
                 </div>
                 <div className="nav-link">
                     <NavLink activeClassName="active" to="/projects">Projects</NavLink>

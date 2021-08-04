@@ -21,7 +21,7 @@ function Friends() {
 
             {
                 friends.map(item => (
-                    <div className="friend">
+                    <div key={item.name} className="friend">
                         <h4>{item.name}</h4>
                         <div>
                             <i className="bi bi-github"></i>

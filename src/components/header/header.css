@@ -12,6 +12,7 @@ header > * {
     display: flex;
     margin-right: 30px;
     color: var(--c-primary);
+    cursor: pointer;
 }
 
 .brand > * {
@@ -49,6 +50,20 @@ header > * {
     font-size: 1.8rem;
 }
 
-.logo {
+.brand-logo, .brand-text {
     height: 3rem;
+}
+
+.brand:hover .brand-logo {
+    animation: spin infinite 10s linear;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
 }
