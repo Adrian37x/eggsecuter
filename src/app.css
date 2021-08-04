@@ -1,6 +1,7 @@
 .app {
     width: 100%;
-    min-height: 100vh;
+    height: 100%;
+    overflow: auto;
 
     display: flex;
     flex-direction: column;
@@ -10,11 +11,12 @@ main {
     flex-grow: 1;
     display: flex;
     width: 100%;
+    overflow: hidden;
 }
 
 main > section {
     flex: 1;
-    margin: 30px 5%;
+    padding: 30px 5%;
     overflow: auto;
 }
 
@@ -54,12 +56,12 @@ main > aside * {
 
 @media only screen and (min-width: 600px) {
     main > section {
-        margin: 30px 10%;
+        padding: 30px 10%;
     }
 }
 
 @media only screen and (min-width: 1400px) {
     main > section {
-        margin: 30px 15%;
+        padding: 30px 15%;
     }
 }

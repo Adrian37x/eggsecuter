@@ -1,5 +1,16 @@
 [
     {
+        "name": "Levi Hechenberger",
+        "github": {
+            "title": "levvij",
+            "url": "https://github.com/levvij"
+        },
+        "website": {
+            "title": "vlvt.in",
+            "url": "https://vlvt.in/"
+        }
+    },
+    {
         "name": "Jacek Lajdecki",
         "github": {
             "title": "jackra1n",
@@ -37,6 +48,72 @@
         "github": {
             "title": "hoiton",
             "url": "https://github.com/hoiton"
+        },
+        "website": {
+            "title": "",
+            "url": ""
+        }
+    },
+    {
+        "name": "Marco Palkoska",
+        "github": {
+            "title": "eddex",
+            "url": "https://github.com/eddex"
+        },
+        "website": {
+            "title": "",
+            "url": ""
+        }
+    },
+    {
+        "name": "Ivo von Rickenbach",
+        "github": {
+            "title": "Iwanho22",
+            "url": "https://github.com/Iwanho22"
+        },
+        "website": {
+            "title": "",
+            "url": ""
+        }
+    },
+    {
+        "name": "Dario Camenzind",
+        "github": {
+            "title": "Gerfatz",
+            "url": "https://github.com/Gerfatz"
+        },
+        "website": {
+            "title": "",
+            "url": ""
+        }
+    },
+    {
+        "name": "Jan Rüger",
+        "github": {
+            "title": "ruegerj",
+            "url": "https://github.com/ruegerj"
+        },
+        "website": {
+            "title": "",
+            "url": ""
+        }
+    },
+    {
+        "name": "Benjamin Zoronij",
+        "github": {
+            "title": "PersonCopy",
+            "url": "https://github.com/PersonCopy"
+        },
+        "website": {
+            "title": "",
+            "url": ""
+        }
+    },
+    {
+        "name": "Daniel Amrein",
+        "github": {
+            "title": "zSlin1",
+            "url": "https://github.com/zSlin1"
         },
         "website": {
             "title": "",
