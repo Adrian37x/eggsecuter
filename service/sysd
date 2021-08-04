@@ -1,0 +1,15 @@
+[Unit]
+Description=Managed Service eggsecuter, eggsectuer.com
+After=network.target
+StartLimitIntervalSec=0
+
+[Service]
+Type=simple
+Restart=always
+RestartSec=3
+User=server
+WorkingDirectory=/home/server/eggsecuter
+ExecStart=/home/server/eggsecuter/service/start
+
+[Install]
+WantedBy=multi-user.target
