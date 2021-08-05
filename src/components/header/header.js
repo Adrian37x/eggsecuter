@@ -12,13 +12,15 @@ function Header(props) {
             </div>
 
             <div className="nav">
-                <div className="nav-link">
-                    <NavLink exact={true} activeClassName="active" to="/">Home</NavLink>
+                <div className="nav-main">
+                    <div className="nav-link">
+                        <NavLink exact={true} activeClassName="active" to="/">Home</NavLink>
+                    </div>
+                    <div className="nav-link">
+                        <NavLink activeClassName="active" to="/projects">Projects</NavLink>
+                    </div>
                 </div>
                 <div className="nav-link">
-                    <NavLink activeClassName="active" to="/projects">Projects</NavLink>
-                </div>
-                <div className="nav-link float-right">
                     <button onClick={props.onToggleAside}>
                         {
                             props.showAside ?

@@ -22,6 +22,14 @@ header > * {
 .nav {
     display: flex;
     flex-grow: 1;
+    overflow-x: auto;
+}
+
+.nav-main {
+    display: flex;
+    flex-grow: 1;
+    overflow-x: auto;
+    margin-right: 30px;
 }
 
 .nav-link {
@@ -65,5 +73,19 @@ header > * {
 
     to {
         transform: rotate(360deg);
+    }
+}
+
+@media only screen and (max-width: 1439px) {
+    .brand {
+        margin-right: 10px;
+    }
+
+    .nav-main {
+        margin-right: 10px;
+    }
+
+    .brand-text {
+        display: none;
     }
 }

@@ -20,26 +20,28 @@ function Projects(props) {
             <h1>Projects</h1>
             <p>All my projects that I deployed are listed here...</p>
 
-            <table>
-                <thead>
-                    <tr>
-                        <td>Name</td>
-                        <td>Description</td>
-                        <td>Version</td>
-                        <td>Domain</td>
-                        <td>Git</td>
-                        <td>Tags</td>
-                        <td>Logs</td>
-                    </tr>
-                </thead>
-                <tbody>
-                    {
-                        (props.limit ? projects.slice(0, props.limit) : projects).map(item => (
-                            <Project key={item.name} project={item} />
-                        ))
-                    }
-                </tbody>
-            </table>
+            <div className="table-responsive">
+                <table>
+                    <thead>
+                        <tr>
+                            <td>Name</td>
+                            <td>Description</td>
+                            <td>Version</td>
+                            <td>Domain</td>
+                            <td>Git</td>
+                            <td>Tags</td>
+                            <td>Logs</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {
+                            (props.limit ? projects.slice(0, props.limit) : projects).map(item => (
+                                <Project key={item.name} project={item} />
+                            ))
+                        }
+                    </tbody>
+                </table>
+            </div>
         </>
     );
 }
