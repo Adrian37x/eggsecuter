@@ -7,7 +7,7 @@
             "label": "Publish to epic server",
             "detail": "Publishes the git project to the epic server",
             "type": "shell",
-            "command": "git push && ssh -i ~/.ssh/id_rsa server@w6.cloud.acryps.com -p 2910 'cd eggsecuter; git pull'",
+            "command": "git push && ssh -i ~/.ssh/id_rsa server@w6.cloud.acryps.com -p 2910 \"cd eggsecuter; git pull\"",
             "problemMatcher": []
         }
     ]
