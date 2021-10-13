@@ -13,4 +13,4 @@ WORKDIR /usr/src/app
 COPY . .
 
 # Run thttpd
-CMD ["/bin/sh", "/usr/src/app"]
+CMD ["/bin/sh", "/usr/src/app/start"]
