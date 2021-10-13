@@ -1,7 +1,7 @@
 FROM alpine:3.13.2
 
-# Install thttpd
-RUN apk add thttpd
+# Install python3
+RUN apk add python3
 
 # Create a non-root user to own the files and run our server
 RUN adduser -D static
@@ -13,5 +13,4 @@ WORKDIR /home/static
 COPY . .
 
 # Run thttpd
-ENV PORT ${PORT}
-CMD ["thttpd", "-D", "-h", "0.0.0.0", "-p", "${PORT}", "-d", "/home/static", "-u", "static", "-l", "-", "-M", "60"]
+CMD ["./start"]
